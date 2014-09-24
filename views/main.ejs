@@ -1,156 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>PSIH Warm Fuzzies</title>
-    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-   <link  href="http://fonts.googleapis.com/css?family=Reenie+Beanie:regular" rel="stylesheet" type="text/css">
+    <meta name="description" content="family letter">
+    <meta name="author" content="Shengwei Zhao">
+    <title>家书抵万金</title>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
-       <link href="/style.css" rel="stylesheet" type="text/css">
-
+    <link href="/style.css" rel="stylesheet" type="text/css">
     <script src="//code.jquery.com/jquery-1.9.1.js"></script>
     <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
-  <script>
+</head>
+
+<body>
+
+
+    <div>
+        <div class="home-sticky instructions"> 
+            <h1> 给家人写信 </h1>
+            <p style="font-size:16px"> 使用说明: <br>选择一个人. 写上你想对他/她说的话，然后点击发送。 <br>点击自己的头像到自己主页</p>
+            <br>
+            <p style="font-size:12px">赵生伟的家庭信件网站，版权归其所有</p>
+        </div>
+    </div>
+
+
+    <div class="home-pic">
+    <img  src="/group7.jpeg" width="30%";>
+    <img  src="/group7.jpeg" width="30%";>
+
+    </div>  
+
+    <div class="home-sticky picture2" style="position:absolute; left:0px; top:300px"> 
+</div>         
+
+
+    <div id="home-container" class="home-sticky sticky-form">
+
+
+      <form action="/submit" method="POST" id="form_one">
+
+         <p> 亲爱的 </p> 
+
+         <select name="recipient">
+            <option value="" disabled selected>点击我选择</option>
+            <option value="赵生伟">赵生伟,</option>
+            <option value="爸爸">爸爸,</option>
+            <option value="妈妈">妈妈,</option>
+            <option value="舅舅">舅舅,</option>
+            <option value="姨奶">姨奶,</option>
+
+
+        </select> <br />
+
+
+        <textarea name="text" form="form_one" id="textarea"></textarea>
+        <br />
+
+        <div id="signature">
+            健康，幸福, 
+            <br />
+
+
+        <select name="author" class="sender">
+            <option value="" disabled selected>点击我选择</option>
+            <option value="赵生伟">赵生伟</option>
+            <option value="爸爸">爸爸</option>
+            <option value="妈妈">妈妈</option>
+            <option value="舅舅">舅舅</option>
+            <option value="姨奶">姨奶</option>
+
+
+        </select>
+
+        </div>
+
+        <input class="submit" type="submit" value="发送" />
+
+
+    </form>
+</div>
+
+
+<div class="persons">
+  <ul>
+    <li>
+    <a href="/赵生伟">
+      <img src="/1.jpg">
+      <h3>赵生伟</h3>
+      <p>儿子</p>
+    </a>
+    </li>
+       
+    <li>
+    <a href="/爸爸">
+      <img src="/2.jpg">
+      <h3>赵福祥</h3>
+       <p>爸爸</p>
+    </a>
+    </li>
  
-
-</script>
-
-  </head>
-
-  <body>
-
-
-<div id="banner">
-    <div class="home-sticky"> 
-        <h1> Penn Social Impact House 2014 </h1>
-    </div>
-
-
-    <div class="home-sticky picture"> 
-    </div>
-
-    <div class="home-sticky instructions"> 
-        <p> Instructions: Pick someone. Write something. </p>
-    </div>
-
-
+    <li>
+    <a href="/妈妈">
+      <img src="/3.jpg">
+      <h3>季龙珠</h3>
+       <p>妈妈</p>
+    </a>
+    </li>
+ 
+  </ul>
 </div>
+<!-- 
 
+<div class="home-sticky picture2"> 
+</div> -->
 
+</body>
 
-<div id="home-container" class="home-sticky sticky-form">
-
-
-  <form action="/submit" method="POST" id="form_one">
-
-       <p> Dear </p> 
-
-      <select name="recipient">
-        <option value="blank">__________,</option>
-        <option value="dhruv">Dhruv,</option>
-        <option value="kristyn">Kristyn,</option>
-        <option value="olivia">Olivia,</option>
-        <option value="aaron">Aaron,</option>
-        <option value="tan">Tan,</option>
-        <option value="marvis">Marvis,</option>
-        <option value="hannah">Hannah,</option>
-        <option value="arielle">Arielle,</option>
-        <option value="casey">Casey,</option>
-        <option value="maryam">Maryam,</option>
-        <option value="adriana">Adriana,</option>
-        <option value="diana">Diana,</option>
-        <option value="lindsay">Lindsay,</option>
-        <option value="luke">Luke,</option>
-        <option value="thammika">Thammika,</option>
-        <option value="jiawen">Jiawen,</option>
-        <option value="stefan">Stefan,</option>
-        <option value="risha">Risha,</option>
-        <option value="eric">Eric,</option>
-        <option value="patricia">Patricia,</option>
-        <option value="james">James,</option>
-        <option value="shengwei">Shengwei,</option>
-        <option value="cosmo">Cosmo,</option>
-        <option value="hannah c.">Hannah C.,</option>
-        <option value="scott">Scott,</option>
-        <option value="peter">Peter,</option>
-        <option value="sarita">Sarita,</option>
-        <option value="kaveh">Kaveh,</option>
-        <option value="jonathan">Jonathan,</option>
-        <option value="gray">Gray,</option>
-        <option value="hannah l.">Hannah L.,</option>
-
-
-      </select> <br />
-
-    
-    <textarea name="text" form="form_one" id="textarea"></textarea>
-    <br />
-
-  <div id="signature">
-    Love, 
-    <br />
-
-
-      <select name="author">
-        <option value="blank">____________</option>
-        <option value="secret admirer"> Secret Admirer </option>
-        <option value="dhruv">Dhruv,</option>
-        <option value="kristyn">Kristyn,</option>
-        <option value="olivia">Olivia</option>
-        <option value="aaron">Aaron</option>
-        <option value="tan">Tan</option>
-        <option value="marvis">Marvis</option>
-        <option value="hannah">Hannah</option>
-        <option value="arielle">Arielle</option>
-        <option value="casey">Casey</option>
-        <option value="maryam">Maryam</option>
-        <option value="adriana">Adriana</option>
-        <option value="diana">Diana</option>
-        <option value="lindsay">Lindsay</option>
-        <option value="luke">Luke</option>
-        <option value="thammika">Thammika</option>
-        <option value="jiawen">Jiawen</option>
-        <option value="stefan">Stefan</option>
-        <option value="risha">Risha</option>
-        <option value="eric">Eric</option>
-        <option value="patricia">Patricia</option>
-        <option value="james">James</option>
-        <option value="shengwei">Shengwei</option>
-        <option value="cosmo">Cosmo</option>
-        <option value="hannah c.">Hannah C.,</option>
-        <option value="scott">Scott</option>
-        <option value="peter">Peter</option>
-        <option value="sarita">Sarita,</option>
-        <option value="kaveh">Kaveh,</option>
-        <option value="jonathan">Jonathan,</option>
-        <option value="gray">Gray,</option>
-        <option value="hannah l.">Hannah L.,</option>
-        <option value="ben cole">Ben Cole,</option>
-
-
-      </select>
-
-  </div>
-
-    <input id="submit" type="submit" />
-
-
-  </form>
-</div>
-
-
-    <div class="home-sticky picture2"> 
-    </div>
-
-
-
-  </body>
-
-
-
-
-  </html>
+</html>

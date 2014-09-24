@@ -7,13 +7,13 @@ var mailer = require('nodemailer');
 
 
 // Use Smtp Protocol to send Email
-var smtpTransport = mailer.createTransport("SMTP",{
-    service: "Gmail",
-    auth: {
-        user: "psih.fuzzies@gmail.com",
-        pass: "psihrocks"
-    }
-});
+// var smtpTransport = mailer.createTransport("SMTP",{
+//     service: "Gmail",
+//     auth: {
+//         user: "psih.fuzzies@gmail.com",
+//         pass: "psihrocks"
+//     }
+// });
 
 
 var ObjectId= mongoose.Types.ObjectId;
@@ -21,17 +21,6 @@ var ObjectId= mongoose.Types.ObjectId;
 //Page: homepage
 exports.home = function(req, res) {
 	res.render("main.ejs");
-};
-
-//Page: admin page
-exports.admin = function(req, res) {
-	Fuzzy.list(function (err, fuzzies) {
-		if(err) {
-			return res.send(404);
-		} else {
-			return res.render("all.ejs", {fuzzies: fuzzies});
-		}
-	});
 };
 
 //Page: individual page
@@ -51,23 +40,23 @@ exports.create = function(req, res) {
 		color: req.body.color,
 		});
 
-	var mail = {
-	    from: "PSIH 2014 <psih.fuzzies@gmail.com>",
-	    to: "dhwari@gmail.com",
-	    subject: "You got a psih fuzzy :)",
-	    text: "Visit http://quiet-tor-9361.herokuapp.com/" + req.body.recipient + " to see your new fuzzy!",
-	    html: "Click <a href='http://quiet-tor-9361.herokuapp.com/" + req.body.recipient + "'>here</a> to see your new fuzzy!"
-	}
+	// var mail = {
+	//     from: "PSIH 2014 <psih.fuzzies@gmail.com>",
+	//     to: "dhwari@gmail.com",
+	//     subject: "You got a psih fuzzy :)",
+	//     text: "Visit http://quiet-tor-9361.herokuapp.com/" + req.body.recipient + " to see your new fuzzy!",
+	//     html: "Click <a href='http://quiet-tor-9361.herokuapp.com/" + req.body.recipient + "'>here</a> to see your new fuzzy!"
+	// }
 
-	smtpTransport.sendMail(mail, function(error, response){
-	    if(error){
-	        console.log(error);
-	    }else{
-	        console.log("Message sent: " + response.message);
-	    }
+	// smtpTransport.sendMail(mail, function(error, response){
+	//     if(error){
+	//         console.log(error);
+	//     }else{
+	//         console.log("Message sent: " + response.message);
+	//     }
 	    
-	    smtpTransport.close();
-	});
+	//     smtpTransport.close();
+	// });
 
 	fuzzy.save(function(err, fuzzy) {
 		if(err) {console.log(err);

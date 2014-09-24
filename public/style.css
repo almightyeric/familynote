@@ -1,11 +1,10 @@
 html,
 body {
-  height: 100%;
+/*  height: 100%;*/
   /* The html and body elements cannot have any padding or margin. */
   margin:0;
   padding:0;
-   font-family: 'Lato', sans-serif;
-      background-image: url('cork.jpg');
+  background-image: url('cork.jpg');
 
 }
 
@@ -44,7 +43,7 @@ body {
 	background-color: #56C4E8;
 	width: 225px;
 	height: 225px;
-	overflow: scroll;
+	overflow: hidden;
 	margin-left: 20px;
 	margin-top: 10px;
 	font-size: 18px;
@@ -60,6 +59,15 @@ body {
  	 box-shadow: 5px 5px 7px rgba(33,33,33,.7);
 }
 
+
+.home-pic{
+
+	margin-left: 50px;
+	margin-top: 10px;
+	padding: 15px;
+
+}
+
 .picture {
 	background-image: url("group7.jpeg");
 	background-size: contain;
@@ -70,46 +78,97 @@ body {
 
 .instructions {
 	background-color: #FCF0AD;
+	margin-right: 20px; 
 }
 
 .picture2 {
-	margin-top: 25px;
+	margin-top: 0px;
 	background-image: url("group5.jpeg");
-	background-size: contain;
+	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	background-color: black;
 	background-position: center;
 }
 
 textarea {
-	width: 180px;
-	height: 100px;
+
+	width: 380px;
+	height: 280px;
 	margin-left: 20%;
+	margin-top: 20px; 
 	outline: none;
 	padding: 10px;
 	font-size: 16px;
-	font-family: 'Pacifico';
-  background-image: url('pink.png');
+    background-image: url('pink.png');
 	border-radius: 5px;
+	overflow: auto;
 }
 
 
 #home-container {
-	margin-top: 25px;
-	width: 400px;
+	margin-top: 5px;
+	margin-bottom: 10px;
 	margin-right: auto;
-	margin-left: 70px;
-	clear: both;
+	padding-top: 0px; 
+	width: 600px;
+	height: 420px;
+	margin-left: 0px;
+	
+
 }
 
 #home-container p {
 	display: inline-block;
 }
 
-#submit {
+
+.submit {
 	display: inline-block;
-	margin-left: 40px;
+	margin-left: 15px;
+	-moz-box-shadow:inset 0px 0px 0px 0px #caefab;
+	-webkit-box-shadow:inset 0px 0px 0px 0px #caefab;
+	box-shadow:inset 0px 0px 0px 0px #caefab;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #77d42a), color-stop(1, #5cb811) );
+	background:-moz-linear-gradient( center top, #77d42a 5%, #5cb811 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#77d42a', endColorstr='#5cb811');
+	background-color:#77d42a;
+	-webkit-border-top-left-radius:42px;
+	-moz-border-radius-topleft:42px;
+	border-top-left-radius:42px;
+	-webkit-border-top-right-radius:0px;
+	-moz-border-radius-topright:0px;
+	border-top-right-radius:0px;
+	-webkit-border-bottom-right-radius:42px;
+	-moz-border-radius-bottomright:42px;
+	border-bottom-right-radius:42px;
+	-webkit-border-bottom-left-radius:0px;
+	-moz-border-radius-bottomleft:0px;
+	border-bottom-left-radius:0px;
+	text-indent:-1.31px;
+	display:inline-block;
+	color:#306108;
+	font-family:Verdana;
+	font-size:14px;
+	font-weight:bold;
+	font-style:normal;
+	height:34px;
+	width:63px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:0px 0px 0px #aade7c;
+	position: relative;
+	top: 0px;
 }
+.submit:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #5cb811), color-stop(1, #77d42a) );
+	background:-moz-linear-gradient( center top, #5cb811 5%, #77d42a 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#5cb811', endColorstr='#77d42a');
+	background-color:#5cb811;
+}.submit:active {
+	position:relative;
+	top:1px;
+}
+/* This button was generated using CSSButtonGenerator.com */
 
 .sticky-form {
   background-image: url('pink.png');
@@ -164,9 +223,19 @@ form {
 }
 
 
+ #container .sticky:nth-child(8n){
+ background-color: #56E862;
+  -o-transform:rotate(5deg);
+  -webkit-transform:rotate(5deg);
+  -moz-transform:rotate(5deg);
+  position:relative;
+  top:-10px;
+}
+
+
 .sticky {
 	width: 225px;
-	overflow: scroll;
+	overflow: hidden;
 	margin-left: 20px;
 	margin-top: 10px;
 	font-size: 18px;
@@ -184,7 +253,7 @@ form {
 
 #signature {
 	font-family: 'Pacifico';
-	margin-left: 160px;
+	margin-left: 55%;
 	display: inline-block;
 }
 
@@ -202,4 +271,57 @@ select {
 	font-family: 'Pacifico';
 }
 
+.sender{
+	margin-left: 95px;
+	margin-right: 0px;
+	margin-top: 5px
+}
 
+
+.persons {
+
+  margin: 5px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+
+}
+
+.persons a{
+	text-decoration:none
+}
+
+.persons a:hover{
+	color:blue;
+}
+ 
+ul {
+  list-style-type: none;
+  width: 250px;
+}
+ 
+h3 {
+  font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
+}
+ 
+li img {
+  float: left;
+  margin: 0 15px 0 0;
+  width:120px;
+  height:130px;
+}
+ 
+li p {
+  font: 200 12px/1.5 Georgia, Times New Roman, serif;
+  color: blue;
+}
+ 
+li {
+  padding: 10px;
+  overflow: auto;
+}
+ 
+li:hover {
+  background: #eee;
+  cursor: pointer;
+}
