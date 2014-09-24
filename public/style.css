@@ -65,7 +65,44 @@ body {
 	margin-left: 50px;
 	margin-top: 10px;
 	padding: 15px;
+	position: relative;
+	left: 120px;
 
+}
+
+.tilt {
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+ 
+.tilt:hover {
+  -webkit-transform: rotate(-10deg);
+     -moz-transform: rotate(-10deg);
+       -o-transform: rotate(-10deg);
+      -ms-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+}
+
+
+/*MORPH*/
+.morph {
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+ 
+.morph:hover {
+  border-radius: 50%;
+  -webkit-transform: rotate(360deg);
+     -moz-transform: rotate(360deg);
+       -o-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 .picture {
@@ -92,9 +129,9 @@ body {
 
 textarea {
 
-	width: 380px;
+	width: 420px;
 	height: 280px;
-	margin-left: 20%;
+	margin-left: 13%;
 	margin-top: 20px; 
 	outline: none;
 	padding: 10px;
@@ -106,7 +143,7 @@ textarea {
 
 
 #home-container {
-	margin-top: 5px;
+	margin-top: -5px;
 	margin-bottom: 10px;
 	margin-right: auto;
 	padding-top: 0px; 
@@ -280,10 +317,11 @@ select {
 
 .persons {
 
-  margin: 5px;
+  margin: 23px;
   position: absolute;
   top: 0px;
   right: 0px;
+  background-color: darkorange; 
 
 }
 
