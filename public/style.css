@@ -134,7 +134,7 @@ body {
 
 textarea {
 
-	width: 420px;
+	width: 80%;
 	height: 280px;
 	margin-left: 13%;
 	margin-top: 20px; 
@@ -265,7 +265,6 @@ select {
 	border: 0;
 	-webkit-appearance: none;
 	padding: 4px;
-  background-image: url('pink.png');
   	font-size: 16px;
 	font-family: 'Pacifico';
 }
@@ -273,7 +272,7 @@ select {
 .sender{
 	margin-left: 145px;
 	margin-right: 0px;
-	margin-top: 5px
+	margin-top: 5px;
 }
 
 
@@ -327,8 +326,8 @@ li:hover {
 }
 
 .mail-btn {
-  position:relative;
-  top:35%;
+/*  position:relative;
+  top:35%;*/
   display:inline-block;
   padding:0.5rem 1rem;
   border:2px solid rgba(255,255,255,0.5);
@@ -339,9 +338,9 @@ li:hover {
   color:rgba(255,255,255,1);
   text-decoration:none;
   text-transform:uppercase;
-  letter-spacing:0.5rem;
+  letter-spacing:0.2rem;
   text-indent:0.5rem;
-  cursor:pointer;
+/*  cursor:pointer;*/
   -webkit-transition:
     color 1.5s .5s,
     border 3s 1s;
@@ -380,8 +379,8 @@ li:hover {
 }
 /***** Form as airmail envelope *****/
 
-.contact-form.envelope {
-	width: 646px;
+.envelope {
+/*	width: 646px;*/
 	padding: 15px;
 	margin: 0 auto;
 	position: relative;
@@ -420,11 +419,11 @@ li:hover {
 
 }
 
-.ie .contact-form.envelope {
+.envelope {
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-.contact-form.envelope:before {
+.envelope:before {
 	content: '';
 	position: absolute;
 	z-index: -1;
