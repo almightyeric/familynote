@@ -3,46 +3,67 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="family letter">
     <meta name="author" content="Shengwei Zhao">
     <title>家书抵万金</title>
     <link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 64x64" href="http://www.greendoorgourmet.com/wp-content/uploads/family1.png">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
     <link href="/style.css" rel="stylesheet" type="text/css">
+
     <script src="//code.jquery.com/jquery-1.9.1.js"></script>
     <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 </head>
 
 <body>
 
+    <div class="container-fluid">
+  <div class="row">
 
-    <div>
-        <div class="home-sticky instructions"> 
-            <h1> 给家人写信 </h1>
+
+<div class="col-md-3">
+
+
+        <div class="post-it-note"> 
+            <h2> 给家人写信 </h2>
             <p style="font-size:16px"> 使用说明: <br>选择一个人. 写上你想对他/她说的话，然后点击发送。 <br>点击自己的头像到自己主页</p>
             <br>
             <p style="font-size:12px">赵生伟的家庭信件网站，版权归其所有</p>
         </div>
-    </div>
+\
 
 
-    <div class="home-pic">
-    <img  src="/group7.jpeg" width="33%";>
-    </div>  
+        <img class="img-responsive" src="/group5.jpeg">
 
-    <div class="home-sticky picture2" style="position:absolute; left:0px; top:300px"> 
-</div>         
+</div>   
 
 
-    <div id="home-container" class="home-sticky sticky-form">
 
 
-      <form action="/submit" method="POST" id="form_one">
+<div class="col-md-6">
 
-         <p> 亲爱的 </p> 
 
-         <select name="recipient">
+    <img  class="img-responsive home-pic" src="/home.jpg" width="80%";>
+
+
+   <!--  <div id="home-container" class="sticky-form">
+ -->
+      <form action="/submit" method="POST" class="contact-form envelope">
+    <!--     id="form_one" -->
+
+        <div class="form-group form-background">
+
+         <p class="mail-btn"> 亲爱的 </p> 
+
+         <select name="recipient" class="form-group mail-input">
             <option value="" disabled selected>点击我选择</option>
             <option value="赵生伟">赵生伟,</option>
             <option value="爸爸">爸爸,</option>
@@ -54,15 +75,15 @@
         </select> <br />
 
 
-        <textarea name="text" form="form_one" id="textarea"></textarea>
+        <textarea name="text" form="form_one" class="form-group mail-btn"></textarea>
         <br />
 
         <div id="signature">
-            健康，幸福, 
+            <p class="mail-btn">健康，幸福, </p>
             <br />
 
 
-        <select name="author" class="sender">
+        <select name="author" class="sender form-group mail-input">
             <option value="" disabled selected>点击我选择</option>
             <option value="赵生伟">赵生伟</option>
             <option value="爸爸">爸爸</option>
@@ -75,45 +96,48 @@
 
         </div>
 
-        <input class="submit" type="submit" value="发送" />
+        <input class="form-group mail-btn" type="submit" value="发送" />
 
 
+
+</div>
     </form>
+<!-- </div> -->
+
 </div>
 
 
-<div class="persons">
-  <ul >
-    <li>
-    <a href="/赵生伟">
-      <img  class="morph" src="/1.jpg">
-      <h3>赵生伟</h3>
-      <p>儿子</p>
-    </a>
-    </li>
-       
-    <li>
-    <a href="/爸爸">
-      <img class="morph" src="/2.jpg">
-      <h3>赵福祥</h3>
-       <p>爸爸</p>
-    </a>
-    </li>
- 
-    <li>
-    <a href="/妈妈">
-      <img  class="morph" src="/3.jpg">
-      <h3>季龙珠</h3>
-       <p>妈妈</p>
-    </a>
-    </li>
- 
-  </ul>
-</div>
-<!-- 
+<div class="col-md-3 family-profile">
 
-<div class="home-sticky picture2"> 
-</div> -->
+<a href="/赵生伟">
+  <img src="/1.jpg" class="profile-img morph img-responsive">
+  <div class="profile-text">
+    <h1 class="profile-name">赵生伟</h1>
+    <span class="profile-title">儿子</span>
+  </div>
+</a>
+
+
+<a href="/爸爸">
+    <img src="/2.jpg"  class="profile-img morph img-responsive">
+  <div class="profile-text">
+    <h1 class="profile-name">赵福祥</h1>
+    <span class="profile-title">爸爸</span>
+  </div>
+</a>
+
+
+<a href="/妈妈">
+    <img src="/3.jpg"  class="profile-img morph img-responsive">
+  <div class="profile-text">
+    <h1 class="profile-name">季龙珠</h1>
+    <span class="profile-title">妈妈</span>
+  </div>
+</a>
+
+
+   
+</div>
 
 </body>
 
