@@ -1,1 +1,1 @@
-Family Note Warm Fuzzies
+Family Note Warm Fuzzies, responsive design
