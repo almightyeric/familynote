@@ -5,7 +5,7 @@ var mongoose = require("mongoose");
 var mailer = require('nodemailer');
 
 // connect to mongoDB database on modulus.io
-uristring='mongodb://shengwei:Zsw1989723824@novus.modulusmongo.net:27017/zyrY2xan'
+uristring=''
 mongoose.connect(uristring, function (err, res) {
   if (err) {
   console.log ('ERROR connecting to: ' + uristring + '. ' + err);
